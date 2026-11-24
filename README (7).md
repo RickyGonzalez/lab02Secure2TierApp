@@ -4,6 +4,8 @@ I built this Azure lab to model an online store that accepts credit card payment
 
 In the lab, I used a stand-in database VM and verified the private path from the web tier with ICMP. The store and payment flow are examples of how the architecture could be used.
 
+[![Watch the Secure Two-Tier Web App walkthrough on Loom](https://www.loom.com/v1/videos/672b368e69c94beab0f231891023597b/thumbnail.jpg)](https://www.loom.com/share/672b368e69c94beab0f231891023597b)
+
 ## Architecture
 
 ```mermaid
