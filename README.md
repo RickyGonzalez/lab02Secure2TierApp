@@ -8,7 +8,7 @@ In the lab, I used a stand-in database VM and verified the private path from the
 
 ## Architecture
 
-<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/5eacbd11-7256-4534-99ed-47918e3025ca" />
+<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/1b103baa-be6c-4d95-a645-0df186312d37" />
 
 The diagram shows the lab's configured entry point and the path I tested. HTTP was allowed in the NSG. The exercise focused on networking, so the validation below uses SSH and ping.
 
