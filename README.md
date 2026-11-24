@@ -8,22 +8,7 @@ In the lab, I used a stand-in database VM and verified the private path from the
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    Internet["Internet clients"]
-    Admin["My workstation"]
-    subgraph VNet["Azure VNet · vnet-lab02 · 10.0.0.0/16"]
-        subgraph WebSubnet["Web subnet · snet-web · 10.0.1.0/24"]
-            Web["vm-web-01 · Standard public IP"]
-        end
-        subgraph DbSubnet["Database subnet · snet-db · 10.0.2.0/24"]
-            Db["vm-db-01 · Private IP only"]
-        end
-    end
-    Internet -->|"HTTP TCP 80 permitted by NSG"| Web
-    Admin -->|"SSH TCP 22"| Web
-    Web -->|"Private IP · ICMP test"| Db
-```
+<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/5eacbd11-7256-4534-99ed-47918e3025ca" />
 
 The diagram shows the lab's configured entry point and the path I tested. HTTP was allowed in the NSG. The exercise focused on networking, so the validation below uses SSH and ping.
 
